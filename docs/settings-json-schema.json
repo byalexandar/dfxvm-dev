@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Settings",
+  "type": "object",
+  "required": [
+    "default_version"
+  ],
+  "properties": {
+    "default_version": {
+      "description": "The version of dfx to use when no version is specified",
+      "type": "string"
+    },
+    "download_url_template": {
+      "description": "The template for the URL of a dfx release tarball.  The template can contain the following variables: {{version}}: The dfx version; {{basename}}: either \"dfx-x86_64-unknown-linux-gnu\" or \"dfx-x86_64-apple-darwin\"; {{archive-format}}: \"tar.gz\"",
+      "type": "string",
+      "default": "https://github.com/dfinity/sdk/releases/download/{{version}}/{{basename}}.{{archive-format}}"
+    },
+    "manifest_url": {
+      "description": "The URL of the dfx public manifest",
+      "type": "string",
+      "default": "https://sdk.dfinity.org/manifest.json"
+    }
+  }
+}
