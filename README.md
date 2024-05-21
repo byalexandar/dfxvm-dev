@@ -1,6 +1,6 @@
 # dfxvm: The dfx version manager
 
-*dfxvm* installs the [Internet Computer SDK][sdk] (dfx), enabling you
+*dfxvm* installs the [BigFile SDK][sdk] (dfx), enabling you
 to easily switch between different versions.
 
 ## Documentation
